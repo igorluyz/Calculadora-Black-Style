@@ -1,0 +1,42 @@
+/* CSS GRID */
+
+/* Divide a tela em linhas e colunas */
+/* Facilita colocar os elementos onde bem queremos */
+
+/* grid-template-areas */
+/* -> Define áreas específicas no grid */
+
+div{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+header{
+    background-color: red;
+    height: 100px;
+    grid-area: header;
+}
+
+main{
+    background-color: blue;
+    height: 400px;
+    grid-area: main;
+}
+  
+aside{
+    background-color:yellow ;
+    height: 400px;
+    grid-area: aside;
+}
+
+footer{
+    background-color:purple ;
+    height: 100px;
+    grid-area: footer;
+}
